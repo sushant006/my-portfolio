@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>projects</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="projects">
+        <h1>Projects</h1>
+        <div class="projectSection">
+            <div class="left">
+                <h1>Eat & Split</h1>
+                <p>Implemented an interactive website that enable seamless bill management and splitting with friends designed for desktops
+                </p>
+                <h6><a href="https://bright-sprinkles-d86aeb.netlify.app/" target="_blank">Live Link</a></h6>
+            </div>
+            <div class="right">
+                <img src="images/pOne.png" alt="">
+            </div>
+        </div>
+        <hr style="border-radius: 80% solid black ; width: 60%; height: 7px;
+        background: linear-gradient(to right, #f06, #ffcc00); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        margin-top: 3%;"/>
+        <div class="projectSection">
+            <div class="left">
+                <h1>Quick Sign</h1>
+                <p>Quick Sign is a website that allows users to digitally sign, save their signature image, and retrieve the last cleared signature, designed exclusively for desktops
+                </p>
+                <h6><a href="https://incomparable-hotteok-01e2b0.netlify.app/">Live Link</a></h6>
+            </div>
+            <div class="right">
+                <img src="images/pTwo.png" alt="">
+            </div>
+        </div>
+        <hr style="border-radius: 80% solid black ; width: 60%; height: 7px;
+        background: linear-gradient(to right, #f06, #ffcc00); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+        margin-top: 3%;"/>
+        <div class="projectSection">
+            <div class="left">
+                <h1>React Portfolio</h1>
+                <p>A responsive React portfolio that features a single-page app with smooth routing and component-based architecture
+                </p>
+                <h6><a href="https://dashing-kulfi-dedbcd.netlify.app/">Live Link</a></h6>
+            </div>
+            <div class="right">
+                <img src="images/pThree.png" alt="">
+            </div>
+        </div>
+        <hr style="border-radius: 80% solid black ; width: 60%; height: 7px;
+        background: linear-gradient(to right, #f06, #ffcc00); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+        margin-top: 3%;"/>
+        <div class="workNight">
+            <ion-icon name="moon-outline"></ion-icon>
+            <ion-icon name="sunny-outline"></ion-icon>
+        </div>
+        <div>
+            <button class="btn"><a href="index.html">Home Page</a></button>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+    <script>
+        var workNight = document.querySelector('.workNight');
+        let projects = document.querySelector('.projects');
+    
+        console.log('workNight:', workNight);
+        console.log('projects:', projects);
+    
+        workNight.addEventListener("click", () => {
+            console.log('Night mode toggled');
+            projects.classList.toggle('night-mode');
+        });
+    </script>
+</body>
+
+</html>
